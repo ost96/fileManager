@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <a class="navbar-brand" href="/ostrowm4/app/">zad3-appMobWeb</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" >
+            <a class="nav-link" href="/ostrowm4/app/">Home</a>
+          </li>
+
+          {% if isLog == "true" %}
+          <li class="nav-item">
+            <a id="qsLogoutBtn" class="btn btn-primary btn-lg btn-logout btn-block" href="/ostrowm4/app/logout/">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ostrowm4/app/fileSubmitter/">File manager</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="/ostrowm4/app/login/">Login</a>
+          </li>
+
+          {% endif %}
+
+        </ul>
+      </div>
+    </nav>
